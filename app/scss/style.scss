@@ -25,11 +25,19 @@
 		display: flex;
 	}
 	&__list-item {
-		padding-right: 45px;
 		padding-left: 35px;
+		padding-right: 45px;
+	}
+	&__list-link {
+		@extend %title-font;
+		line-height: 1.375;
+		color: rgba(54, 56, 56, 0.9);
 	}
 }
 
 .logo {
 	margin: 0 auto;
 }
+
+// ========== Footer 1920x472px ========== //
+
