@@ -40,4 +40,15 @@
 }
 
 // ========== Footer 1920x472px ========== //
-
+.footer {
+	&__content {
+		padding: 61px 0 80px;
+		background-color: $footer;
+	}
+	&__copyright {
+		padding: 42px 0 41px;
+		text-align: center;
+		background-color: $copyright;
+		color: #a1a1a1;
+	}
+}
