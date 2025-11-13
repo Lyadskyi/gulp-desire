@@ -29,8 +29,9 @@
 		padding-right: 45px;
 	}
 	&__list-link {
-		@extend %title-font;
+		display: block;
 		line-height: 1.375;
+		@extend %title-font;
 		color: rgba(54, 56, 56, 0.9);
 	}
 }
@@ -39,16 +40,95 @@
 	margin: 0 auto;
 }
 
-// ========== Footer 1920x472px ========== //
+// ========== Footer 1920x452px ========== //
 .footer {
 	&__content {
 		padding: 61px 0 80px;
-		background-color: $footer;
+		background-color: $footer-bg;
 	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__info {
+		width: 539px;
+	}
+	&__info-title {
+		line-height: 1.4375; /* 23/16 */
+		margin-bottom: 14px;
+		@extend %title-font;
+		color: $title;
+	}
+	&__info-text {
+		max-width: 476px;
+		line-height: 1.782;
+		margin-bottom: 16px;
+	}
+	&__info-email {
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 2; /* 28/14 */
+		margin-bottom: 22px;
+		padding-left: 30px;
+		color: $title;
+	}
+	&__form {
+		display: flex;
+	}
+	&__form-input {
+		padding: 6px 10px 6px 18px;
+		width: 100%;
+		height: 40px;
+		border-radius: 21px;
+		border: 1px solid rgba($title, 0.7);
+		background-color: transparent;
+		&::placeholder {
+			font-family: 'Open Sans', sans-serif;
+			line-height: 1.75; /* 28/16 */
+			font-size: 16px;
+			font-weight: 400;
+			color: $placeholder;
+		}
+	}
+	&__form-button {
+		margin-left: 9px;
+		padding: 6px 12px;
+		width: 160px;
+		height: 40px;
+		font-weight: 600;
+		line-height: 1.75; /* 28/16 */
+		text-align: center;
+		border-radius: 21px;
+		border: none;
+		background-color: $title;
+		color: #fffff0;
+	}
+	&__social-list {
+		width: 125px;
+		margin-right: auto;
+		margin-left: 99px;
+	}
+	&__menu-list {
+		margin-right: 60px;
+		width: 126px;
+	}
+	&__social-item,
+	&__menu-item {
+		margin-bottom: 15px;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 2; /* 28/14 */
+	}
+	&__social-link,
+	&__menu-link {
+		color: #707070;
+	}
+
 	&__copyright {
 		padding: 42px 0 41px;
 		text-align: center;
-		background-color: $copyright;
-		color: #a1a1a1;
+		background-color: $title;
+		color: $placeholder;
 	}
 }
