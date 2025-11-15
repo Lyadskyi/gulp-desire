@@ -12,6 +12,8 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.6875; /* 27/16 */
+	overflow-x: hidden;
+	min-width: 320px;
 	color: $default;
 }
 
