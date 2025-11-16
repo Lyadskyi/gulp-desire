@@ -5,4 +5,9 @@ $(function () {
 	$('.rightside-menu__close').on('click', function () {
 		$('.rightside-menu').addClass('rightside-menu--close');
 	});
+	$('.hero__slider').slick({
+		dots: true,
+		arrows: false,
+		fade: true,
+	});
 });
