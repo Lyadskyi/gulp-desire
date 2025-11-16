@@ -36,3 +36,26 @@ body {
 .footer {
 	flex: 0 0 auto;
 }
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	li {
+		margin: 0 15px;
+	}
+	button {
+		font-size: 0;
+		width: 8px;
+		height: 8px;
+		padding: 0;
+		border: none;
+		border-radius: 50%;
+		background-color: $title;
+	}
+	li.slick-active {
+		button {
+			background-color: #ffef35;
+		}
+	}
+}
