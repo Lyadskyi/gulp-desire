@@ -246,6 +246,39 @@
 	}
 }
 
+// ========== Section Decor 1920x616px ========== //
+.decor {
+	padding: 172px 0 156px;
+	background-image: url(../images/decor-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 616px;
+	&__title {
+		@extend %title-font;
+		font-size: 60px;
+		line-height: 1.3334; /* 80/60 */
+		margin-bottom: 21px;
+		padding-bottom: 22px;
+		max-width: 731px;
+		position: relative;
+		color: $title;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 200px;
+			height: 1px;
+			background: #6d7278;
+		}
+	}
+	&__text {
+		max-width: 540px;
+		line-height: 1.75; /* 28/16 */
+	}
+}
+
 // ========== Footer 1920x451px ========== //
 .footer {
 	&__content {
