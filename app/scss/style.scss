@@ -279,6 +279,73 @@
 	}
 }
 
+// ========== Section How it works 1110x451px ========== //
+.works-path {
+	padding: 79px 0 25px;
+	&__title {
+		@extend %title-font;
+		font-size: 36px;
+		line-height: 1.4167; /* 51/36 */
+		text-align: center;
+		margin-bottom: 39px;
+		color: $title;
+	}
+	// &__items {
+	// }
+	&__items-box {
+		display: flex;
+		position: relative;
+		align-items: flex-end;
+		border-bottom: 2px solid rgba($title, 0.7);
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -6px;
+			left: 0;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: $title;
+		}
+	}
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 250px;
+		height: 100%;
+		position: relative;
+	}
+	&__tem--consultation,
+	&__item--production {
+		padding-bottom: 30px;
+	}
+	&__item--production {
+		margin-left: 317px;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 2px;
+			height: 20px;
+			background: rgba($title, 0.7)
+		}
+	}
+	// &__item-img {
+	// }
+	&__item-title {
+		@extend %title-font;
+		line-height: 1.4375; /* 23/16 */
+		margin-left: 13px;
+		color: $title;
+	}
+	&__item-text {
+		line-height: 1.6875; /* 27/16 */
+		margin-top: 13px;
+	}
+}
+
 // ========== Footer 1920x451px ========== //
 .footer {
 	&__content {
