@@ -279,7 +279,7 @@
 	}
 }
 
-// ========== Section How it works 1110x451px ========== //
+// ========== Section How it works 1110x467px ========== //
 .works-path {
 	padding: 79px 0 25px;
 	&__title {
@@ -290,8 +290,6 @@
 		margin-bottom: 39px;
 		color: $title;
 	}
-	// &__items {
-	// }
 	&__items-box {
 		display: flex;
 		position: relative;
@@ -318,7 +316,20 @@
 	}
 	&__tem--consultation,
 	&__item--production {
-		padding-bottom: 30px;
+		padding-bottom: 86px;
+	}
+	&__item--measuring {
+		margin-left: 306px;
+		padding-top: 38px;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 2px;
+			height: 20px;
+			background: rgba($title, 0.7);
+		}
 	}
 	&__item--production {
 		margin-left: 317px;
@@ -329,11 +340,9 @@
 			left: 0;
 			width: 2px;
 			height: 20px;
-			background: rgba($title, 0.7)
+			background: rgba($title, 0.7);
 		}
 	}
-	// &__item-img {
-	// }
 	&__item-title {
 		@extend %title-font;
 		line-height: 1.4375; /* 23/16 */
@@ -345,6 +354,8 @@
 		margin-top: 13px;
 	}
 }
+
+// ========== Section Blog 1110x622px ========== //
 
 // ========== Footer 1920x451px ========== //
 .footer {

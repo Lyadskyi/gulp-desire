@@ -9,3 +9,13 @@ $placeholder: #a1a1a1;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
+
+// _____ Mixin _____ //
+@mixin titleHome {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.4167; /* 51/36 */
+	text-align: center;
+	color: $title;
+}
