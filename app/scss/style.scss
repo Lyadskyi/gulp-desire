@@ -381,8 +381,6 @@
 		background-color: rgba(255, 239, 53, 0.5);
 		color: $title;
 	}
-	&__inner {
-	}
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
@@ -399,20 +397,6 @@
 		height: 100%;
 		max-height: 1148px;
 	}
-}
-.container-fluid {
-}
-.mix {
-}
-.bedroom {
-}
-.livingRoom {
-}
-.office {
-}
-.diningRoom {
-}
-.chair {
 }
 
 // ========== Footer 1920x451px ========== //
@@ -454,7 +438,7 @@
 		&::before {
 			content: '';
 			position: absolute;
-			background-image: url(../images/envelope.svg);
+			background-image: url(../images/icons/envelope.svg);
 			top: 10px;
 			left: 0;
 			width: 16px;
@@ -523,7 +507,7 @@
 		&::before {
 			content: '';
 			position: absolute;
-			background-image: url(../images/facebook.svg);
+			background-image: url(../images/icons/facebook.svg);
 			top: 3px;
 			left: 0;
 			width: 16px;
@@ -531,25 +515,25 @@
 		}
 	}
 	&__social-link--facebook::before {
-		background-image: url(../images/facebook.svg);
+		background-image: url(../images/icons/facebook.svg);
 		top: 2px;
 	}
 	&__social-link--instagram::before {
-		background-image: url(../images/instagram.svg);
+		background-image: url(../images/icons/instagram.svg);
 		width: 14px;
 		height: 14px;
 	}
 	&__social-link--pinterest::before {
-		background-image: url(../images/pinterest.svg);
+		background-image: url(../images/icons/pinterest.svg);
 		top: 2px;
 	}
 	&__social-link--whatsapp::before {
-		background-image: url(../images/whatsapp.svg);
+		background-image: url(../images/icons/whatsapp.svg);
 		width: 14px;
 		height: 14px;
 	}
 	&__social-link--youtube::before {
-		background-image: url(../images/youtube.svg);
+		background-image: url(../images/icons/youtube.svg);
 		top: 4px;
 		width: 18px;
 		height: 12px;
