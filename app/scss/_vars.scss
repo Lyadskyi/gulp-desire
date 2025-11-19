@@ -11,11 +11,27 @@ $placeholder: #a1a1a1;
 }
 
 // _____ Mixin _____ //
-@mixin titleHome {
+@mixin homeTitle {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.4167; /* 51/36 */
 	text-align: center;
+	color: $title;
+}
+
+@mixin aboutTitle {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.66667; /* 60/36 */
+	color: $title;
+}
+
+@mixin blogTitle {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.58333; /* 38/24 */
 	color: $title;
 }

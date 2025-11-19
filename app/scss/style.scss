@@ -281,7 +281,7 @@
 
 // ========== Section How it works 1110x467px ========== //
 .works-path {
-	padding: 79px 0 25px;
+	padding: 79px 0 28px;
 	&__title {
 		@extend %title-font;
 		font-size: 36px;
@@ -356,8 +356,60 @@
 }
 
 // ========== Block Gallery 1865x1228px ========== //
-
-
+.gallery {
+	padding: 80px 0 88px;
+	&__buttons {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	&__btn {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 2; /* 28/14 */
+		text-align: center;
+		padding: 6px 16px;
+		border-radius: 20px;
+		border: 1px solid #454647;
+		background-color: transparent;
+		color: #8f8d8d;
+		&:not(:last-child) {
+			margin-right: 25px;
+		}
+	}
+	.mixitup-control-active {
+		border: 1px solid rgba(255, 239, 53, 0.5);
+		background-color: rgba(255, 239, 53, 0.5);
+		color: $title;
+	}
+	&__inner {
+	}
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-gap: 30px 35px;
+	}
+	&__item:first-child {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+	&__item-img {
+	}
+}
+.container-fluid {
+}
+.mix {
+}
+.bedroom {
+}
+.livingRoom {
+}
+.office {
+}
+.diningRoom {
+}
+.chair {
+}
 
 // ========== Footer 1920x451px ========== //
 .footer {
