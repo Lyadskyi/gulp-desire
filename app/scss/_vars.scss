@@ -1,10 +1,11 @@
-// --- Colors --- //
+// _____ Colors _____ //
 $title: #363838;
 $default: #5a5a5a;
 $footer-bg: #dfdfdf;
+$line: #6d7278;
 $placeholder: #a1a1a1;
 
-// --- Rules --- //
+// _____ Rules _____ //
 %title-font {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
@@ -24,7 +25,7 @@ $placeholder: #a1a1a1;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 36px;
 	font-weight: 700;
-	line-height: 1.66667; /* 60/36 */
+	line-height: 1.6667; /* 60/36 */
 	color: $title;
 }
 
@@ -32,6 +33,6 @@ $placeholder: #a1a1a1;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
-	line-height: 1.58333; /* 38/24 */
+	line-height: 1.5833; /* 38/24 */
 	color: $title;
 }

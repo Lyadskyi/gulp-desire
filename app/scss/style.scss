@@ -40,10 +40,9 @@
 	margin: 0 auto;
 }
 
-// ========== Header 1920x120px ========== //
 .rightside-menu {
 	position: absolute;
-	z-index: 1;
+	z-index: 10;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -87,7 +86,7 @@
 			height: 1px;
 			max-width: 252px;
 			margin: 0 auto;
-			background: #6d7278;
+			background: $line;
 		}
 		color: $title;
 	}
@@ -147,7 +146,7 @@
 			left: 0;
 			width: 185px;
 			height: 1px;
-			background: #6d7278;
+			background: $line;
 		}
 	}
 	&__slider-text {
@@ -176,7 +175,7 @@
 			width: 250px;
 			height: 1px;
 			margin: 0 auto;
-			background: #6d7278;
+			background: $line;
 		}
 	}
 	&__text {
@@ -235,7 +234,7 @@
 			width: 80%;
 			height: 1px;
 			margin: 0 auto;
-			background: #6d7278;
+			background: $line;
 		}
 	}
 	&__info-text {
@@ -270,7 +269,7 @@
 			left: 0;
 			width: 200px;
 			height: 1px;
-			background: #6d7278;
+			background: $line;
 		}
 	}
 	&__text {
@@ -400,7 +399,6 @@
 }
 
 // ========== Section Blog-box 1110x576px ========== //
-
 .blog-box {
 	padding-bottom: 99px;
 	&__title {
