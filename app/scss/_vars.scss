@@ -1,17 +1,17 @@
-// _____ Colors _____ //
+// ===== Colors ===== //
 $title: #363838;
 $default: #5a5a5a;
 $footer-bg: #dfdfdf;
 $line: #6d7278;
 $placeholder: #a1a1a1;
 
-// _____ Rules _____ //
+// ===== Rules ===== //
 %title-font {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
 
-// _____ Mixin _____ //
+// ===== Mixin ===== //
 @mixin homeTitle {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;

@@ -34,6 +34,20 @@
 		@extend %title-font;
 		color: rgba(54, 56, 56, 0.9);
 	}
+	&__list-link--active {
+		padding-bottom: 4px;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			height: 2px;
+			border-radius: 1px;
+			background-color: rgba($title, 0.7);
+		}
+	}
 }
 
 .logo {
@@ -95,6 +109,27 @@
 	}
 	&__image {
 		max-width: 483px;
+	}
+}
+
+.breadcrumbs {
+	padding: 13px 0 14px;
+	background: rgba($footer-bg, 0.5);
+	&__list {
+		display: flex;
+	}
+	&__item::after {
+		content: '/';
+		margin-right: 4px;
+		margin-left: -4px;
+	}
+	&__item:last-child::after {
+		display: none;
+	}
+	&__link {
+		font-size: 14px;
+		line-height: 2; /* 28/14 */
+		color: $default;
 	}
 }
 
