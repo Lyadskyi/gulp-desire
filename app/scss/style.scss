@@ -100,7 +100,7 @@
 			height: 1px;
 			max-width: 252px;
 			margin: 0 auto;
-			background: $line;
+			background-color: $line;
 		}
 		color: $title;
 	}
@@ -114,7 +114,7 @@
 
 .breadcrumbs {
 	padding: 13px 0 14px;
-	background: rgba($breadcrumbs-footer, 0.5);
+	background-color: rgba($breadcrumbs-footer, 0.5);
 	&__list {
 		display: flex;
 	}
@@ -148,7 +148,7 @@
 			top: 0;
 			width: 100%;
 			height: 722px;
-			z-index: -1;
+			z-index: -10;
 		}
 	}
 	&__slider-item {
@@ -181,7 +181,7 @@
 			left: 0;
 			width: 185px;
 			height: 1px;
-			background: $line;
+			background-color: $line;
 		}
 	}
 	&__slider-text {
@@ -210,7 +210,7 @@
 			width: 250px;
 			height: 1px;
 			margin: 0 auto;
-			background: $line;
+			background-color: $line;
 		}
 	}
 	&__text {
@@ -250,7 +250,7 @@
 		align-items: center;
 		opacity: 0;
 		transition: all 0.5s;
-		background: rgba(#fff, 0.6);
+		background-color: rgba(#fff, 0.6);
 	}
 	&__info-title {
 		@extend %title-font;
@@ -269,7 +269,7 @@
 			width: 80%;
 			height: 1px;
 			margin: 0 auto;
-			background: $line;
+			background-color: $line;
 		}
 	}
 	&__info-text {
@@ -304,7 +304,7 @@
 			left: 0;
 			width: 200px;
 			height: 1px;
-			background: $line;
+			background-color: $line;
 		}
 	}
 	&__text {
@@ -362,7 +362,7 @@
 			left: 0;
 			width: 2px;
 			height: 20px;
-			background: rgba($title, 0.7);
+			background-color: rgba($title, 0.7);
 		}
 	}
 	&__item--production {
@@ -374,7 +374,7 @@
 			left: 0;
 			width: 2px;
 			height: 20px;
-			background: rgba($title, 0.7);
+			background-color: rgba($title, 0.7);
 		}
 	}
 	&__item-title {
@@ -627,7 +627,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		text-align: center;
-		margin-top: -53px;
+		// margin-top: -53px;
 		padding: 159px 0 160px;
 	}
 	&__prev-title {
@@ -636,13 +636,44 @@
 		line-height: 1.3334; /* 80/60 */
 		color: rgba($title, 0.59);
 	}
+// ========== About-content 1110x471px ========== //
 	&__content {
+		padding: 129px 0 40px;
 	}
 	&__title {
+		position: relative;
+		@extend %title-font;
+		font-size: 36px;
+		line-height: 1.6667; /* 60/36 */
+		max-width: 822px;
+		margin-bottom: 23px;
+		padding-bottom: 20px;
+		color: $title;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 200px;
+			height: 2px;
+			background-color: $line;
+		}
 	}
 	&__text {
+		padding-left: 285px;
+		p {
+			margin-bottom: 38px;
+		}
 	}
 	&__popup {
+		background-image: url(../images/popup-bg.jpg);
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 414px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	&__popup-play {
 	}
