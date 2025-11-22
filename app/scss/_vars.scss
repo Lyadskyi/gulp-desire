@@ -8,7 +8,7 @@ $placeholder: #a1a1a1;
 // ===== Rules ===== //
 %title-font {
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 700; 
+	font-weight: 700;
 }
 
 // ===== Mixin ===== //
@@ -35,4 +35,11 @@ $placeholder: #a1a1a1;
 	font-weight: 700;
 	line-height: 1.5833; /* 38/24 */
 	color: $title;
+}
+
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+	@return m#{i}n(#{$numbers});
 }
