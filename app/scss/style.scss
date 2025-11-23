@@ -35,8 +35,8 @@
 		color: rgba(54, 56, 56, 0.9);
 	}
 	&__list-link--active {
-		padding-bottom: 4px;
 		position: relative;
+		padding-bottom: 4px;
 		&::after {
 			content: '';
 			position: absolute;
@@ -85,12 +85,12 @@
 		margin-bottom: 41px;
 	}
 	&__title {
-		@extend %title-font;
 		position: relative;
 		font-size: 36px;
 		line-height: 1.4167; /* 51/36 */
 		margin-bottom: 17px;
 		padding-bottom: 17px;
+		@extend %title-font;
 		&::after {
 			content: '';
 			position: absolute;
@@ -167,12 +167,12 @@
 		margin-left: 26px;
 	}
 	&__slider-title {
-		@extend %title-font;
+		position: relative;
 		font-size: 110px;
 		line-height: 1.2182; /* 134/110 */
 		margin-bottom: 26px;
 		padding-bottom: 27px;
-		position: relative;
+		@extend %title-font;
 		color: $title;
 		&::after {
 			content: '';
@@ -194,12 +194,12 @@
 	text-align: center;
 	padding: 45px 0 104px;
 	&__title {
-		@extend %title-font;
+		position: relative;
 		font-size: 36px;
 		line-height: 1.4167; /* 51/36 */
 		margin-bottom: 24px;
 		padding-bottom: 25px;
-		position: relative;
+		@extend %title-font;
 		color: $title;
 		&::after {
 			content: '';
@@ -237,8 +237,8 @@
 		object-fit: cover;
 	}
 	&__info {
-		position: absolute;
 		content: '';
+		position: absolute;
 		top: 0;
 		right: 0;
 		bottom: 0;
@@ -253,12 +253,12 @@
 		background-color: rgba(#fff, 0.6);
 	}
 	&__info-title {
-		@extend %title-font;
+		position: relative;
 		font-size: 20px;
 		line-height: 1.2; /* 24/20 */
 		margin-bottom: 19px;
 		padding-bottom: 19px;
-		position: relative;
+		@extend %title-font;
 		color: $title;
 		&::after {
 			content: '';
@@ -289,13 +289,13 @@
 	background-position: center;
 	min-height: 616px;
 	&__title {
-		@extend %title-font;
+		position: relative;
 		font-size: 60px;
 		line-height: 1.3334; /* 80/60 */
 		margin-bottom: 21px;
 		padding-bottom: 22px;
 		max-width: 731px;
-		position: relative;
+		@extend %title-font;
 		color: $title;
 		&::after {
 			content: '';
@@ -317,16 +317,16 @@
 .works-path {
 	padding: 79px 0 28px;
 	&__title {
-		@extend %title-font;
 		font-size: 36px;
 		line-height: 1.4167; /* 51/36 */
 		text-align: center;
 		margin-bottom: 39px;
+		@extend %title-font;
 		color: $title;
 	}
 	&__items-box {
-		display: flex;
 		position: relative;
+		display: flex;
 		align-items: flex-end;
 		border-bottom: 2px solid rgba($title, 0.7);
 		&::after {
@@ -341,12 +341,12 @@
 		}
 	}
 	&__item {
+		position: relative;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		width: 250px;
 		height: 100%;
-		position: relative;
 	}
 	&__tem--consultation,
 	&__item--production {
@@ -378,9 +378,9 @@
 		}
 	}
 	&__item-title {
-		@extend %title-font;
 		line-height: 1.4375; /* 23/16 */
 		margin-left: 13px;
+		@extend %title-font;
 		color: $title;
 	}
 	&__item-text {
@@ -463,9 +463,9 @@
 		color: inherit;
 	}
 	&__item-title {
-		@extend %title-font;
 		font-size: 24px;
 		line-height: 1.5834; /* 38/24 */
+		@extend %title-font;
 		color: $title;
 	}
 }
@@ -498,8 +498,8 @@
 		display: inline-block;
 	}
 	&__info-email {
-		display: inline-block;
 		position: relative;
+		display: inline-block;
 		font-size: 14px;
 		font-weight: 600;
 		line-height: 2; /* 28/14 */
@@ -573,8 +573,8 @@
 		color: #707070;
 	}
 	&__social-link {
-		padding-left: 28px;
 		position: relative;
+		padding-left: 28px;
 		&::before {
 			content: '';
 			position: absolute;
@@ -618,8 +618,8 @@
 	}
 }
 
-// ========== About.html ========== //
-
+// ++++++++++ ABOUT.html ++++++++++ //
+// ========== About-prev 1920x399px ========== //
 .about {
 	&__prev {
 		background-image: url(../images/about-bg.jpg);
@@ -631,23 +631,23 @@
 		padding: 159px 0 160px;
 	}
 	&__prev-title {
-		@extend %title-font;
 		font-size: 60px;
 		line-height: 1.3334; /* 80/60 */
+		@extend %title-font;
 		color: rgba($title, 0.59);
 	}
-// ========== About-content 1110x471px ========== //
+	// ========== About-content 1110x471px ========== //
 	&__content {
 		padding: 129px 0 40px;
 	}
 	&__title {
 		position: relative;
-		@extend %title-font;
 		font-size: 36px;
 		line-height: 1.6667; /* 60/36 */
 		max-width: 822px;
 		margin-bottom: 23px;
 		padding-bottom: 20px;
+		@extend %title-font;
 		color: $title;
 		&::after {
 			content: '';
@@ -665,6 +665,7 @@
 			margin-bottom: 38px;
 		}
 	}
+	// ========== About-popup 1920x414px ========== //
 	&__popup {
 		background-image: url(../images/popup-bg.jpg);
 		background-position: top center;
@@ -675,8 +676,80 @@
 		justify-content: center;
 		align-items: center;
 	}
-	// &__popup-play {
-	// }
-	// &__popup-imgbtn {
-	// }
+}
+
+// ========== Inspiration 1920x551px ========== //
+.inspiration {
+	position: relative;
+	padding-top: 98px;
+	margin-bottom: 10px;
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: url(../images/inspiration-bg.jpg);
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 342px;
+		z-index: -20;
+	}
+	&__inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__image {
+		margin-right: 78px;
+		margin-left: -170px;
+	}
+	&__content {
+		max-width: 824px;
+	}
+	&__title {
+		position: relative;
+		font-size: 36px;
+		line-height: 1.6667; /* 60/36 */
+		padding-bottom: 16px;
+		margin-bottom: 24px;
+		@extend %title-font;
+		color: $title;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 200px;
+			height: 2px;
+			border-radius: 1px;
+			background-color: $line;
+		}
+	}
+	&__text {
+		margin-bottom: 30px;
+	}
+	&__item {
+		font-size: 16px;
+		line-height: 1.4375; /* 23/16 */
+		@extend %title-font;
+		color: $title;
+		&:not(:last-child) {
+			margin-bottom: 33px;
+		}
+	}
+	&__item-content {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 14px;
+		border-radius: 4px;
+		border-bottom: 2px solid #ffffff;
+	}
+	&__line {
+		height: 2px;
+		margin-top: -2px;
+		border-radius: 4px;
+		background-color: $title;
+	}
 }
