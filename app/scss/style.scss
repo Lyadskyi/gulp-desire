@@ -192,7 +192,7 @@
 // ========== Section New collection 1868x531px ========== //
 .new-collection {
 	text-align: center;
-	padding: 45px 0 104px;
+	padding: 45px 0 32px;
 	&__title {
 		position: relative;
 		font-size: 36px;
@@ -223,6 +223,7 @@
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 29.5px;
+	padding-bottom: 72px;
 
 	&__item {
 		position: relative;
@@ -233,8 +234,8 @@
 		}
 	}
 	&__images {
-		// min-height: 350px;
 		object-fit: cover;
+		height: 350px;
 	}
 	&__info {
 		content: '';
@@ -678,11 +679,10 @@
 	}
 }
 
-// ========== Inspiration 1920x551px ========== //
+// ========== Inspiration 1920x507px ========== //
 .inspiration {
 	position: relative;
 	padding-top: 98px;
-	margin-bottom: 10px;
 	&::after {
 		content: '';
 		position: absolute;
@@ -752,4 +752,21 @@
 		border-radius: 4px;
 		background-color: $title;
 	}
+}
+
+// ========== Partners 1920x320px ========== //
+.partners {
+	padding: 10px 0 54px;
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+	&__item {
+		margin: 0 auto;
+	}
+}
+
+// ========== Collection 1868x350px ========== //
+.container-fluid{
+	padding: 0 28px;
 }
