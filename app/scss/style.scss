@@ -31,8 +31,12 @@
 	&__list-link {
 		display: block;
 		line-height: 1.375;
+		transition: all 0.1s ease;
 		@extend %title-font;
 		color: rgba(54, 56, 56, 0.9);
+		&:hover {
+			color: #1c7840;
+		}
 	}
 	&__list-link--active {
 		position: relative;
@@ -250,7 +254,7 @@
 		justify-content: center;
 		align-items: center;
 		opacity: 0;
-		transition: all 0.5s;
+		transition: all 0.4s ease-in-out;
 		background-color: rgba(#fff, 0.6);
 	}
 	&__info-title {
@@ -469,11 +473,22 @@
 	&__theme {
 		color: inherit;
 	}
+	&__author,
+	&__theme {
+		transition: all 0.1s ease-in-out;
+		&:hover {
+			color: #f74e2d;
+		}
+	}
 	&__item-title {
 		font-size: 24px;
 		line-height: 1.5834; /* 38/24 */
 		@extend %title-font;
 		color: $title;
+		transition: all 0.1s ease-in-out;
+		&:hover {
+			color: #f74e2d;
+		}
 	}
 }
 
